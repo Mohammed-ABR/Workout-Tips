@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <title>JS starter</title>
-    </head>
-    <body>
-        <script src="./src/index.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Workout in Space</title>
+</head>
+<body>
+    
+    <div class="galaxy"></div>
+    <div class="black-hole"></div>
+    <div class="planet" style="top: 20%; left: 10%;"></div>
+    <div class="planet" style="top: 50%; left: 70%; width: 80px; height: 80px;"></div>
+    <div class="neon-glow" style="top: 30%; left: 40%;"></div>
+    <div class="neon-glow" style="top: 60%; left: 20%;"></div>
+
+    <section>
+        <h2>Choose Your Fitness Goals:</h2>
+        <label><input id="gain-muscle" type="checkbox"> Gain Muscle</label><br>
+        <label><input id="lose-weight" type="checkbox"> Lose Weight</label><br>
+        <label><input id="increase-stamina" type="checkbox"> Increase Stamina</label><br>
+        
+        <button id="get-advice">Get Advice</button>
+        <button id="reset">Reset</button>
+
+        <hr>
+        <p id="message"></p>
+    </section>
+
+    <script src="./src/index.js"></script>
+</body>
 </html>
